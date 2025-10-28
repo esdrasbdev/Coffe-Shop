@@ -1,0 +1,54 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Fundo geral */
+body {
+  background-color: #fdfdfd;
+  color: #3a2e25;
+}
+
+/* NAVBAR */
+.header {
+  background-color: transparent;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+}
+.logo {
+  position: initial;
+  left: 50%;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.local {
+  background-color: #ffffff1a;
+  padding: 0.4rem 0.7rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+}
+
+.buy {
+  background-color: #ffffff1a;
+  padding: 0.4rem 0.6rem;
+  border-radius: 8px;
+  font-size: 1rem;
+}
