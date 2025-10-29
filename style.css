@@ -310,8 +310,8 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
   font-size: 16px;
 }
+
 /* Footer */
-/* Footer geral */
 .footer {
   /* primeiro o gradiente leve sobre a imagem, depois a imagem */
   background-image: linear-gradient(rgba(202,152,117,0.9), rgba(202,152,117,0.9)), url('images/herosection.jpg');
