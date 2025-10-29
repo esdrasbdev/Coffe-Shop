@@ -311,70 +311,97 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 16px;
 }
 /* Footer */
+/* Footer geral */
 .footer {
-  background-image:  
-  linear-gradient(rgba(202, 152, 117, 0.9)), url(images/herosection.jpg); 
+  /* primeiro o gradiente leve sobre a imagem, depois a imagem */
+  background-image: linear-gradient(rgba(202,152,117,0.9), rgba(202,152,117,0.9)), url('images/herosection.jpg');
   background-size: cover;
   background-repeat: repeat;
   background-position: center;
   color: #2e1b0a;
-  padding: 60px 20px 40px;
+  padding: 40px 0 60px; /* espaço superior e inferior */
   position: relative;
   border-top: 2px solid rgba(122, 73, 21, 0.585);
+  overflow: hidden;
 }
 
-/* Conteúdo principal */
+/* container central que limita o conteúdo - ajuste max-width conforme seu layout */
+.container {
+  width: 100%;
+  max-width: 1180px; /* ajuste se necessário */
+  margin: 0 auto;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+/* Área principal (logo + texto) */
 .footer-content {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  margin-bottom: 40px;
-  border-bottom: 2px solid rgba(122, 73, 21, 0.585);
+  padding: 28px 0;
+  border-bottom: 2px solid rgba(122, 73, 21, 0.2);
 }
 
+/* Texto do bloco esquerdo */
 .footer-info h3 {
   font-family: 'Baloo 2', cursive;
   font-size: 20px;
-  margin-bottom: 8px;
+  margin: 0 0 8px 0;
+  font-weight: 700;
 }
 
 .footer-info h3 a {
   color: #1a120b;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .footer-info p {
   font-size: 14px;
   color: #2e1b0a;
-  max-width: 350px;
+  max-width: 320px; 
   line-height: 1.5;
+  margin: 0;
 }
 
-/* Linha inferior */
 .footer-bottom {
-  text-align: left;
-  font-size: 15px;
-  color: #2e1b0a;
-  padding-top: 10px;
+  display: block;
+  padding: 14px 0 0 0;
 }
 
-/* Botão "Voltar ao topo" */
+.footer .top-label {
+  position: absolute;
+  right: 92px;   
+  bottom: 25px; 
+  font-size: 13px;
+  color: #2e1b0a;
+  font-weight: 800;
+}
+
+.footer-bottom .copyright {
+  margin: 0;
+  font-size: 13px;
+  color: #2e1b0a;
+  opacity: 0.95;
+}
+
+/* Botão quadrado no canto inferior direito */
 .btn-top {
   position: absolute;
-  bottom: 20px;
-  right: 30px;
+  bottom: 12px;
+  right: 24px;
   background-color: #7b4b2a;
   color: #fff;
   border: none;
   border-radius: 8px;
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   cursor: pointer;
   font-size: 18px;
-  transition: background-color 0.3s ease;
-}
-
-.btn-top:hover {
-  background-color: #5b3620;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+  box-shadow: 0 2px 0 rgba(0,0,0,0.08);
 }
