@@ -312,68 +312,59 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* Footer */
 .footer {
-  background-color: #c6905b; 
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4)), 
-  linear-gradient(rgba(202, 152, 117, 0.9)), url(images/herosection.jpg);; 
+  background-image:  
+  linear-gradient(rgba(202, 152, 117, 0.9)), url(images/herosection.jpg); 
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-position: center;
   color: #2e1b0a;
-  padding: 60px 20px;
+  padding: 60px 20px 40px;
   position: relative;
-  border-top: 2px solid rgba(0, 0, 0, 0.1);
+  border-top: 2px solid rgba(122, 73, 21, 0.585);
 }
 
+/* Conteúdo principal */
 .footer-content {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 30px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+  border-bottom: 2px solid rgba(122, 73, 21, 0.585);
 }
 
 .footer-info h3 {
   font-family: 'Baloo 2', cursive;
-  font-size: 24px;
-  color: #2e1b0a;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.footer-info h3 a {
+  color: #1a120b;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .footer-info p {
   font-size: 14px;
-  color: #4b3621;
-  margin-top: 4px;
+  color: #2e1b0a;
+  max-width: 350px;
+  line-height: 1.5;
 }
 
-.footer-links a {
-  color: #2e1b0a;
-  text-decoration: none;
-  margin: 0 10px;
+/* Linha inferior */
+.footer-bottom {
+  text-align: left;
   font-size: 15px;
-  transition: color 0.3s ease;
-}
-
-.footer-links a:hover {
-  color: #3f250e;
-  text-decoration: underline;
-}
-
-.footer-social a {
   color: #2e1b0a;
-  font-size: 20px;
-  margin: 0 8px;
-  transition: color 0.3s ease;
-}
-
-.footer-social a:hover {
-  color: #000;
+  padding-top: 10px;
 }
 
 /* Botão "Voltar ao topo" */
 .btn-top {
   position: absolute;
   bottom: 20px;
-  right: 20px;
-  background-color: #4a2e14;
+  right: 30px;
+  background-color: #7b4b2a;
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -385,5 +376,5 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-top:hover {
-  background-color: #3a2410;
+  background-color: #5b3620;
 }
