@@ -7,12 +7,11 @@ O objetivo é apresentar produtos e informações de forma elegante, com foco em
 
 ## 📁 Estrutura do Projeto
 
-Coffe-Shop/
-│
-├── images/
-├── index.html
-├── style.css
-└── script.js
+- **Coffee-Shop/**
+  - 📁 **images/** - Pasta de imagens
+  - 📄 **index.html** - Página principal
+  - 🎨 **style.css** - Arquivo de estilos
+  - ⚡ **script.js** - Funções JavaScript
 
 ## ✨ Funcionalidades
 
