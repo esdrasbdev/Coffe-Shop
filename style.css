@@ -31,6 +31,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: transparent;
   padding: 20px 60px;
   transition: top 0.2s ease;
+    backdrop-filter: blur(1px); /* Efeito de embaciamento */
 }
 
 .container {
@@ -40,9 +41,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo {
-  font-size: 28px;
-  font-weight: bold;
-  color: hsl(26, 71%, 10%);
+  font-size: 36px;
+  font-weight: bolder;
+  color: hsl(0, 0%, 100%);
 }
 
 .nav-right {
@@ -59,11 +60,15 @@ h1, h2, h3, h4, h5, h6 {
   background-color: rgb(173, 255, 175);
 }
 
+.location i{
+  margin-right: 8px;
+}
+
 .btn-cart {
-  background: #F1E9C9;
-  color: #C47F17;
+  background: rgb(173, 255, 175);
+  color:  #1c8812;
   border: none;
-  padding: 8px;
+  padding: 10px;
   border-radius: 6px;
   cursor: pointer;
   font-size: 14px;
@@ -71,11 +76,11 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Hero Section */
 .hero {
-  padding: 120px 0 60px;
-  /* dá espaço para o header */
+  padding: 140px 0 70px;
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(rgba(163, 78, 36, 0.3), rgba(159, 67, 39, 0.69)), url(images/herosection.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4)), 
+  linear-gradient(rgba(202, 152, 117, 0.9)), url(images/herosection.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -86,7 +91,7 @@ h1, h2, h3, h4, h5, h6 {
 .hero-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  gap: 30px;
   align-items: center;
 }
 
@@ -101,36 +106,41 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 20px;
   color: #191818;
   margin-bottom: 32px;
+  font-weight: 700;
 }
 
 .benefits {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* duas colunas */
-    gap: 20px 40px; /* espaçamento entre linhas e colunas */
-    list-style: none;
-    padding: 0;
-    margin-bottom: 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* duas colunas */
+  gap: 20px 40px; /* espaçamento entre linhas e colunas */
+  list-style: none;
+  padding: 0;
+  margin-bottom: 32px;
 }
 
 .benefits li {
-    display: flex;
-    align-items: center;
-    font-size: 16px;
-    color: #000000;
-    font-weight: 500;
+  display: flex;
+  align-items: center; 
+  justify-content: flex-start; 
+  font-size: 16px;
+  color: #000000;
+  font-weight: 500;
+  min-height: 50px;
 }
 
 .benefits .icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #2e1b0a; /* marrom escuro */
-    color: #fff;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    font-size: 14px;
-    margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2e1b0a; 
+  color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 14px;
+  margin-right: 12px; 
+  vertical-align: middle; 
+  flex-shrink: 0; 
 }
 
 .hero-buttons {
@@ -157,6 +167,11 @@ h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
 }
 
+.hero-image {
+  margin-top: 50px; /* Desce a imagem */
+  margin-left: 50px; /* Move para a direita */
+}
+
 .hero-image img {
   width: 100%;
   max-height: 450px;
@@ -172,7 +187,9 @@ h1, h2, h3, h4, h5, h6 {
 .products h2 {
   font-size: 36px;
   margin-bottom: 40px;
+  margin-left: 200px;
   color: #272221;
+  text-align: start; 
 }
 
 .products-grid {
@@ -295,8 +312,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* Footer */
 .footer {
-  background-color: #c6905b; /* marrom claro */
-  background-image: url('images/footer-bg.png'); /* use o padrão de grãos de café */
+  background-color: #c6905b; 
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4)), 
+  linear-gradient(rgba(202, 152, 117, 0.9)), url(images/herosection.jpg);; 
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
