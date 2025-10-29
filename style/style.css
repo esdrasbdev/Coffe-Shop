@@ -11,9 +11,14 @@ body {
   line-height: 1.6;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Baloo 2', cursive;
-    font-weight: 700;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Baloo 2', cursive;
+  font-weight: 700;
 }
 
 .container {
@@ -31,7 +36,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: transparent;
   padding: 20px 60px;
   transition: top 0.2s ease;
-    backdrop-filter: blur(1px); /* Efeito de embaciamento */
+  backdrop-filter: blur(1px);
 }
 
 .container {
@@ -43,7 +48,7 @@ h1, h2, h3, h4, h5, h6 {
 .logo {
   font-size: 36px;
   font-weight: bolder;
-  color: hsl(0, 0%, 100%);
+  color: #311d05 ;
 }
 
 .nav-right {
@@ -53,23 +58,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .location {
+  background: rgb(173, 255, 175);
   color: #1c8812;
+  border: none;
+  padding: 10px;
+  border-radius: 12px;
+  cursor: pointer;
   font-size: 14px;
-  border-radius: 1rem;
-  padding: 8px 16px;
-  background-color: rgb(173, 255, 175);
 }
 
-.location i{
+.location i {
   margin-right: 8px;
 }
 
 .btn-cart {
   background: rgb(173, 255, 175);
-  color:  #1c8812;
+  color: #1c8812;
   border: none;
   padding: 10px;
-  border-radius: 6px;
+  border-radius: 12px;
   cursor: pointer;
   font-size: 14px;
 }
@@ -79,8 +86,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 140px 0 70px;
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4)), 
-  linear-gradient(rgba(202, 152, 117, 0.9)), url(images/herosection.jpg);
+  background-image: url(../images/hero.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -111,8 +117,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .benefits {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* duas colunas */
-  gap: 20px 40px; /* espaçamento entre linhas e colunas */
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 40px;
   list-style: none;
   padding: 0;
   margin-bottom: 32px;
@@ -120,8 +126,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .benefits li {
   display: flex;
-  align-items: center; 
-  justify-content: flex-start; 
+  align-items: center;
+  justify-content: flex-start;
   font-size: 16px;
   color: #000000;
   font-weight: 500;
@@ -132,15 +138,15 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #2e1b0a; 
+  background-color: #2e1b0a;
   color: #fff;
   border-radius: 50%;
   width: 40px;
   height: 40px;
   font-size: 14px;
-  margin-right: 12px; 
-  vertical-align: middle; 
-  flex-shrink: 0; 
+  margin-right: 12px;
+  vertical-align: middle;
+  flex-shrink: 0;
 }
 
 .hero-buttons {
@@ -168,8 +174,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-image {
-  margin-top: 50px; /* Desce a imagem */
-  margin-left: 50px; /* Move para a direita */
+  margin-top: 50px;
+  margin-left: 50px;
+
 }
 
 .hero-image img {
@@ -189,7 +196,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 40px;
   margin-left: 200px;
   color: #272221;
-  text-align: start; 
+  text-align: start;
 }
 
 .products-grid {
@@ -281,7 +288,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .price strong {
   font-size: 24px;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 .quantity-cart {
@@ -311,30 +318,34 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 16px;
 }
 
+.btn-add-cart:hover {
+  background-color: #5c3bf3;
+  transform: scale(1.05);
+}
+
 /* Footer */
 .footer {
-  /* primeiro o gradiente leve sobre a imagem, depois a imagem */
-  background-image: linear-gradient(rgba(202,152,117,0.9), rgba(202,152,117,0.9)), url('images/herosection.jpg');
+  background-image: url('../images/hero.png');
   background-size: cover;
   background-repeat: repeat;
   background-position: center;
   color: #2e1b0a;
-  padding: 40px 0 60px; /* espaço superior e inferior */
+  padding: 40px 0 60px;
   position: relative;
   border-top: 2px solid rgba(122, 73, 21, 0.585);
   overflow: hidden;
 }
 
-/* container central que limita o conteúdo - ajuste max-width conforme seu layout */
+
 .container {
   width: 100%;
-  max-width: 1180px; /* ajuste se necessário */
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 24px;
   box-sizing: border-box;
 }
 
-/* Área principal (logo + texto) */
+
 .footer-content {
   display: flex;
   align-items: flex-start;
@@ -343,7 +354,7 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 2px solid rgba(122, 73, 21, 0.2);
 }
 
-/* Texto do bloco esquerdo */
+
 .footer-info h3 {
   font-family: 'Baloo 2', cursive;
   font-size: 20px;
@@ -360,7 +371,7 @@ h1, h2, h3, h4, h5, h6 {
 .footer-info p {
   font-size: 14px;
   color: #2e1b0a;
-  max-width: 320px; 
+  max-width: 320px;
   line-height: 1.5;
   margin: 0;
 }
@@ -372,8 +383,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer .top-label {
   position: absolute;
-  right: 92px;   
-  bottom: 25px; 
+  right: 92px;
+  bottom: 25px;
   font-size: 13px;
   color: #2e1b0a;
   font-weight: 800;
@@ -386,7 +397,7 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0.95;
 }
 
-/* Botão quadrado no canto inferior direito */
+
 .btn-top {
   position: absolute;
   bottom: 12px;
@@ -403,5 +414,5 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: center;
   transition: background-color 0.2s ease;
-  box-shadow: 0 2px 0 rgba(0,0,0,0.08);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.08);
 }
